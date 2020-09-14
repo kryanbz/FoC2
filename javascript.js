@@ -57,9 +57,9 @@ function and(){
     if(inputOneIsOn&&inputTwoIsOn)
         document.getElementById('andGate').src='and2on.png';
     else if (!inputOneIsOn && inputTwoIsOn) 
-        document.getElementById('andGate').src='andoffon.PNG';
+        document.getElementById('andGate').src='andoffon.png';
 	else if (inputOneIsOn && !inputTwoIsOn) 
-        document.getElementById('andGate').src='andonoff.PNG';
+        document.getElementById('andGate').src='andonoff.png';
 	else if (!inputOneIsOn && !inputTwoIsOn) 
-        document.getElementById('andGate').src='and2off.PNG';
+        document.getElementById('andGate').src='and2off.png';
 	}
