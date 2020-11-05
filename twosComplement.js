@@ -28,8 +28,17 @@ function convert()
 			convertedSecondNumber = newnum2.toString(2);
 			document.getElementById("resultNumber2").innerHTML = convertedSecondNumber;
 		}
-	x = Math.abs(num1) + Math.abs(num2);	
-	document.getElementById("resultAddition").innerHTML = Math.abs(x.toString(2));	
-	document.getElementById("intAddition").innerHTML = num1 + num2;	
+	x = num1 + num2;
+    if (x >= 0) {
+		var positiveX=x.toString(2);
+	document.getElementById("resultAddition").innerHTML = positiveX;
+	}
+    else
+    {
+       var newX = x+16;
+	   negativeX=newX.toString(2);
+	   document.getElementById("resultAddition").innerHTML = negativeX;
+    }	   
+	document.getElementById("intAddition").innerHTML = x;	
 }
 
